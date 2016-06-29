@@ -1,0 +1,16 @@
+<?php
+
+class M_admin extends CI_Model{
+	
+	function cekadmin($table,$where){
+		return $this->db->get_where($table, $where); // ini return num_rows select nama sama password 
+	}
+
+	function adminLog($table,$where){
+		return $this->db->get_where($table, $where);
+	}
+
+	function echohalo(){
+		echo "halo";
+	}
+}
